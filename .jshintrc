@@ -1,0 +1,16 @@
+{
+    "strict" : false,
+    "indent" : 4,
+    "maxlen" : 80,
+    "unused" : false,
+    "undef" : true,
+    "browser" : true,
+    "devel" : true,
+    "debug"    : true,
+    "globals": {
+        "_": false,
+        "Backbone": false
+    },
+    "eqnull" : true,
+    "expr" : true
+}

@@ -1,0 +1,10 @@
+.sass-cache
+.DS_Store
+node_modules
+npm-debug.log
+*.swp
+public/assets/*.*
+public/assets/**/*
+
+misc/*
+Gruntfile.js

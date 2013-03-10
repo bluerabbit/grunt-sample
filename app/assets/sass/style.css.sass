@@ -1,0 +1,30 @@
+@import compass/css3/border-radius
+@import compass/css3/
+@import compass/utilities
+@import compass
+@import compass/reset/
+@import font-awesome
+@import sassy-buttons
+@import zurui-sass
+
+// sassy-button
+.button
+  @include sassy-button("simple", 10px, 19px, #4ba3cc)
+
+// site
+a
+  img
+    border: 0
+  text-decoration: underline
+  &:hover
+    text-decoration: none
+    background-color: transparent
+
+
+// http://zurui-sample.herokuapp.com/
+
+.zurui-ts-000
+  @include zurui-ts-000
+
+.zurui-box-deboss
+  @include zurui-box-deboss
