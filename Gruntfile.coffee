@@ -1,8 +1,10 @@
 module.exports = (grunt) ->
   grunt.loadNpmTasks "grunt-contrib"
+  grunt.loadNpmTasks "grunt-growl"
 
   grunt.registerTask "default", ["clean", "copy", "jshint", "coffee", "concat", "compass:dev", "cssmin", "uglify"] # minify
   grunt.registerTask "test", ["clean", "copy", "jshint", "coffee", "concat", "connect", "qunit"]
+  grunt.registerTask "x", ["growl:myMessage"]
 
   grunt.initConfig
     pkg: grunt.file.readJSON("package.json")
@@ -135,7 +137,12 @@ module.exports = (grunt) ->
           dest: "public/assets/all.min.js"
         ]
 
+    growl:
+      myMessage:
+        message: "Some message"
+        title: "Notification Title"
+#        image: "/foo.png"
+
 
 #  grunt.event.on "qunit.spawn", (url) ->
 #    grunt.log.ok "Running test: " + url
-

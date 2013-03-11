@@ -25,6 +25,10 @@ Install this with `-g`
 
 `npm install -g coffee-script`
 
+### terminal-notifier
+
+`gem install terminal-notifier`
+
 
 ### phantomjs
 
